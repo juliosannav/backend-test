@@ -9,6 +9,7 @@ export function validarRUT(rut: string): boolean {
 
     // Verificar que tenga al menos 2 caracteres (número y dígito verificador)
     if (rutLimpio.length < 2) return false;
+    
 
     // Separar el número y el dígito verificador
     const numero = rutLimpio.slice(0, -1);
