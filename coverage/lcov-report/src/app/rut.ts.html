@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/routes/main-route.ts</title>
+    <title>Code coverage report for src/app/rut.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/routes</a> main-route.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/app</a> rut.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>18/18</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>18/18</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -90,61 +90,85 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import express from 'express';
-import { configuration } from '../config.js';
-import { validarRUT } from '../app/rut.js';
-import { contarCoincidenciasEnCadena } from '../app/cadenas.js';
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">53x</span>
+<span class="cline-any cline-yes">53x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Valida un RUT chileno.
+ * @param rut - El RUT en formato string (puede incluir puntos y guion).
+ * @returns true si el RUT es válido, false en caso contrario.
+ */
+export function validarRUT(rut: string): boolean {
+    // Eliminar puntos y guiones del RUT
+    const rutLimpio = rut.replace(/\./g, '').replace(/-/g, '');
 &nbsp;
-let mainRouter = express.Router();
+    // Verificar que tenga al menos 2 caracteres (número y dígito verificador)
+    if (rutLimpio.length &lt; 2) return false;
+    
 &nbsp;
-mainRouter.get("/", (_req, res) =&gt; {
-    return res.send(`Hola mundo al usuario ${configuration.username}`);
-});
+    // Separar el número y el dígito verificador
+    const numero = rutLimpio.slice(0, -1);
+    const digitoVerificador = rutLimpio.slice(-1).toUpperCase();
 &nbsp;
-mainRouter.get("/api-key", (_req, res) =&gt; {
-    return res.send(`la apikey de mi aplicacion es: ${configuration.apikey}`);
-});
+    // Verificar que el número contenga solo dígitos
+    if (!/^\d+$/.test(numero)) return false;
 &nbsp;
-mainRouter.get("/validar-rut", (req, res) =&gt; {
-    const { rut } = req.query as { rut: string };
-    let resultado = validarRUT(rut);
-    return res.send(`El rut suministrado (${rut}) es : ${resultado ? "valido" : "invalido"}`);
-});
+    // Calcular el dígito verificador esperado
+    let suma = 0;
+    let multiplicador = 2;
 &nbsp;
-mainRouter.get("/buscar-subcadena", (req, res) =&gt; {
-    const { cadena, subcadena } = req.query as { cadena: string, subcadena: string };
-    const cantidadRepeticiones = contarCoincidenciasEnCadena(cadena, subcadena);
-    return res.send(`La cadeja "${cadena}" tiene ${cantidadRepeticiones} repeticiones de la subcadena "${subcadena}"`);
-});
+    // Recorrer los dígitos del número de derecha a izquierda
+    for (let i = numero.length - 1; i &gt;= 0; i--) {
+        suma += parseInt(numero[i], 10) * multiplicador;
+        multiplicador = multiplicador &lt; 7 ? multiplicador + 1 : 2;
+    }
 &nbsp;
-export default mainRouter;</pre></td></tr></table></pre>
+    const resto = suma % 11;
+    const digitoCalculado = 11 - resto === 10 ? 'K' : 11 - resto === 11 ? '0' : String(11 - resto);
+&nbsp;
+    // Comparar el dígito verificador calculado con el ingresado
+    return digitoCalculado === digitoVerificador;
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
