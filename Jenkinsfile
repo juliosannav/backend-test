@@ -8,7 +8,7 @@ pipeline {
             agent {
                 docker {
                     label 'contenedores'
-                    image 'node:22-alpine'
+                    image 'node:23-alpine'
                     reuseNode true
                 }
             }
