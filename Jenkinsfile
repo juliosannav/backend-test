@@ -2,8 +2,7 @@ pipeline {
     agent any
     environment {
         USERNAME = "cmd"
-    }
-    USERNAME
+    }    
     stages{
         stage("build"){
             agent {
