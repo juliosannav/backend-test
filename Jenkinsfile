@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        USERNAME = "Julio Santibanez"
+        USERNAME = "cmd"
     }
     USERNAME
     stages{
