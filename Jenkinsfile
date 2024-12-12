@@ -33,10 +33,10 @@ pipeline {
         stage("delivery - subida a nexus"){
            steps{
                 script {
-                    docker.withRegistry(parametros){
+                    docker.withRegistry("http://localhost:8082", "registry"){
                         sh 'build -t backend-test .'
-                        sh 'tag backend-test localhost:8082/backend-test'
-                        sh 'push localhost:8082/backend-test'
+                        sh 'tag backend-test:latest localhost:8082/backend-test:latest '
+                        sh 'push localhost:8082/backend-test:latest '
                     }
                 }
            } 
