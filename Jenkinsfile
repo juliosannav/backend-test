@@ -35,8 +35,8 @@ pipeline {
                 script {
                     docker.withRegistry("http://localhost:8082", "registry"){
                         sh 'docker build -t backend-test . '
-                        sh 'tag backend-test localhost:8082/backend-test '
-                        sh 'push localhost:8082/backend-test '
+                        sh 'docker tag backend-test localhost:8082/backend-test '
+                        sh 'docker push localhost:8082/backend-test '
                     }
                 }
            } 
