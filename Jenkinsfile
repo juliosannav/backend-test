@@ -30,6 +30,17 @@ pipeline {
                 }
             }
         }
+        stage("delivery - subida a nexus"){
+           steps{
+                script {
+                    docker.withRegistry("http://localhost:8082", "registry"){
+                        sh 'docker build -t backend-test . '
+                        sh 'docker tag backend-test localhost:8082/backend-test '
+                        sh 'docker push localhost:8082/backend-test '
+                    }
+                }
+           } 
+        }
         stage("Quality assurance"){
             agent {
                 docker {
@@ -61,16 +72,6 @@ pipeline {
                 }
             }
         }
-        stage("delivery - subida a nexus"){
-           steps{
-                script {
-                    docker.withRegistry("http://localhost:8082", "registry"){
-                        sh 'docker build -t backend-test . '
-                        sh 'docker tag backend-test localhost:8082/backend-test '
-                        sh 'docker push localhost:8082/backend-test '
-                    }
-                }
-           } 
-        }
+        
     }
 }
